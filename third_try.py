@@ -24,7 +24,6 @@ def load_data_and_model() :
     oil = pd.read_csv('oil.csv')
     holidays = pd.read_csv('holidays_events.csv')
     stores = pd.read_csv('stores.csv')
-    train = pd.read_csv('train.csv')
     return model, df, oil, holidays, stores, train
 
 model, df, oil, holidays, stores, train = load_data_and_model()
