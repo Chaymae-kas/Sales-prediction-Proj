@@ -34,7 +34,7 @@ csv_path = os.path.join(extracted_dir, 'train.csv')
 # Now you can work with the 'train' DataFrame
 
 def load_data_and_model() :
-    model = pickle.load(open('xgb_model.pkl', 'rb'), predictor='cpu_predictor')
+    model = pickle.load(open('xgb_model.pkl', 'rb'))
     df = pd.read_csv('test.csv')
     oil = pd.read_csv('oil.csv')
     holidays = pd.read_csv('holidays_events.csv')
