@@ -17,8 +17,21 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import plotly.colors as color
 import base64
+import zipfile
+import os
 
-!unzip /content/train.zip -d extracted_file/
+# Define paths
+zip_path = 'train.zip'
+extracted_dir = 'extracted_file/'
+
+# Unzip the file
+with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    zip_ref.extractall(extracted_dir)
+
+# Read the CSV file from the extracted directory
+csv_path = os.path.join(extracted_dir, 'train.csv')
+
+# Now you can work with the 'train' DataFrame
 
 def load_data_and_model() :
     model = pickle.load(open('xgb_model.pkl', 'rb'))
@@ -26,7 +39,7 @@ def load_data_and_model() :
     oil = pd.read_csv('oil.csv')
     holidays = pd.read_csv('holidays_events.csv')
     stores = pd.read_csv('stores.csv')
-    train = pd.read_csv('extracted_file/train.csv')
+    train = pd.read_csv(csv_path)
     return model, df, oil, holidays, stores, train
 
 model, df, oil, holidays, stores, train = load_data_and_model()
