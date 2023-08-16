@@ -18,13 +18,15 @@ import matplotlib.pyplot as plt
 import plotly.colors as color
 import base64
 
+!unzip /content/train.zip -d extracted_file/
+
 def load_data_and_model() :
     model = pickle.load(open('xgb_model.pkl', 'rb'))
     df = pd.read_csv('test.csv')
     oil = pd.read_csv('oil.csv')
     holidays = pd.read_csv('holidays_events.csv')
     stores = pd.read_csv('stores.csv')
-    train = pd.read_csv('train.csv')
+    train = pd.read_csv('extracted_file/train.csv')
     return model, df, oil, holidays, stores, train
 
 model, df, oil, holidays, stores, train = load_data_and_model()
