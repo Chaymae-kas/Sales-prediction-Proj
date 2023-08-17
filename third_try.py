@@ -79,8 +79,18 @@ def add_bg_from_local(image_file):
 add_bg_from_local('backgroundImage.jpg')
 with st.sidebar:
     
- 
+    # CSS styling for the sidebar
+    sidebar_custom_css = """
+    .sidebar .sidebar-content {
+    background-color: #f0f0f0;  /* Background color */
+    color: #333333;  /* Text color */
+    }
+    """
+
+    # Apply the CSS styling
+    st.markdown(sidebar_custom_css, unsafe_allow_html=True)
     
+ 
 
     selected = option_menu('Ecuador sales predictions',
                         ['Sales Prediction', 'Predicting Sold Products for a given store', 'Exploratory Data Analysis'],
