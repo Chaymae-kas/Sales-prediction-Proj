@@ -16,7 +16,7 @@ Preliminary analyses were conducted to:
 - Identify significant features to keep and features to remove.
 
 
-# Modeling 
+## Modeling 
 
 Using an XGBRegressor. trained on approximately 80% of the data, encompassing purchases made between 01-01-2013 and 02-01-2017. The remaining data, around 20%, is set aside for testing, spanning the period from 02-01-2017 to 08-15-2017. 
 
