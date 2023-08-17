@@ -130,9 +130,10 @@ if (selected == 'Predicting Sold Products for a given store'):
     FEATURES = ['family', 'store_nbr', 'onpromotion', 'dcoilwtico', 'cluster', 'national_holiday_type', 'state_holiday_type', 'city_holiday_type', 'quarter', 'month', 'year', 'dayofyear']
 
     X_test = filtered_row[FEATURES]
+    X_test_dmatrix = xgb.DMatrix(X_test) 
 
     if st.button('Sold Products'):
-        prediction = model.predict(X_test)
+        prediction = model.predict(X_test_dmatrix)
         prediction = np.where(prediction < 0, 0, prediction)
 
         family_prediction = pd.DataFrame({'Product': filtered_row['input_family'], 'predicted sales': prediction.flatten()})
