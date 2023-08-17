@@ -7,7 +7,6 @@ Created on Thu Jun 15 21:32:09 2023
 
 
 import datetime
-import pickle
 import seaborn as sns
 import numpy as np
 import pandas as pd
@@ -141,9 +140,6 @@ if (selected == 'Predicting Sold Products for a given store'):
         family_prediction = family_prediction.reset_index(drop=True)
         st.write(family_prediction)
 
-
-# Assuming you already have a DataFrame named 'train' with columns 'family' and 'sales'
-
 if (selected == 'Exploratory Data Analysis'):
 
     st.title('Exploratory data analysis')
@@ -237,7 +233,7 @@ if (selected == 'Exploratory Data Analysis'):
 
 
     st.pyplot(fig4)
-   # pie d promotion en fct dyal categories
+   # pie de promotion en fct des categories
 
 # Calculate the mean sales and on promotion for each family category
     data_grouped_family_types = train.groupby('family')[['sales', 'onpromotion']].mean().reset_index()
@@ -276,8 +272,6 @@ if (selected == 'Exploratory Data Analysis'):
     #df = pd.read_csv(r'C:\Users\pc\Downloads\forpairplot.csv')
     #train_numeric = df.apply(pd.to_numeric, errors='coerce')
   
-
-# Assuming you already have a DataFrame named 'train_df' with columns 'store_nbr', 'onpromotion', and 'sales'
 
 # Group the DataFrame by 'store_nbr' and calculate the sum of 'onpromotion' and 'sales'
     grouped_data = train.groupby('store_nbr')[['onpromotion', 'sales']].sum().reset_index()
