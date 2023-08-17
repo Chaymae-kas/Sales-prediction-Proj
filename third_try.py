@@ -108,7 +108,8 @@ if (selected == 'Sales Prediction'):
         FEATURES = ['family', 'store_nbr', 'onpromotion', 'dcoilwtico', 'cluster', 'national_holiday_type','state_holiday_type','city_holiday_type', 'quarter' ,'month', 'year', 'dayofyear']
 
         X_test = filtered_row[FEATURES]
-        prediction = model.predict(X_test)
+        X_test_dmatrix = xgb.DMatrix(X_test)        
+        prediction = model.predict(X_test_dmatrix)
         
         prediction = np.where(prediction < 0, 0, prediction)
         st.write("Predicted Sales:")
