@@ -2,7 +2,7 @@
 
 
 
-![Logo](https://as2.ftcdn.net/v2/jpg/04/67/81/93/1000_F_467819347_PcrG6Oj5iQGa58sPQwH6ypqqseIspz7D.jpg)
+![Logo](https://as2.ftcdn.net/v2/jpg/06/12/64/59/1000_F_612645922_B2ViC0HzzcUUfxATQDNLj7KjOCuya0Ks.jpg)
 
 
 Within this project, our goal is to anticipate the sales of 33 product families available in Favorita stores situated in Ecuador. Through the application of sophisticated data analysis methods and machine learning, we are striving to construct a dependable and precise sales prediction model.
