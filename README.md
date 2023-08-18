@@ -32,6 +32,6 @@ This interface consists of three pages:
 - The first page of our interface enables users to predict the sales of a specific product category in a given store on a specific date.
 - The second page of our interface facilitates predicting the products sold for a specific store on a given date.
 - The final page of our interface incorporates several graphs that facilitate exploratory analysis of the available data.
-
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlitio/jcharis/streamlit_trend_app/yourApp/)
 
 
