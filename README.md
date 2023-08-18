@@ -1,5 +1,5 @@
 # Sales prediction using ML.
-[![Logo](https://as2.ftcdn.net/v2/jpg/06/12/64/59/1000_F_612645922_B2ViC0HzzcUUfxATQDNLj7KjOCuya0Ks.jpg)](https://t3.ftcdn.net/jpg/04/89/16/78/240_F_489167846_WeNOIDwVVxhYHhaKlKU0E2mskQJQr0aZ.jpg)
+
 Within this project, our goal is to anticipate the sales of 33 product families available in Favorita stores situated in Ecuador. Through the application of sophisticated data analysis methods and machine learning, we are striving to construct a dependable and precise sales prediction model.
 
 ## Dataset
