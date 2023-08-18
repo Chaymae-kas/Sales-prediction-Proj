@@ -27,9 +27,6 @@ After evaluating the model and being satisfied with the results, we proceeded to
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sales-prediction-project.streamlit.app/)
 
-<a href="https://sales-prediction-project.streamlit.app/" target="_blank">
-  <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App">
-</a>
 
 To enhance interaction with the model, we've developed a user-friendly graphical interface using Streamlit.
 
