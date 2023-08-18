@@ -1,6 +1,8 @@
 
 # Sales prediction using ML.
 
+![Logo](https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-finance-graph-grow-icon-png-image_4751329.png)
+
 Within this project, our goal is to anticipate the sales of 33 product families available in Favorita stores situated in Ecuador. Through the application of sophisticated data analysis methods and machine learning, we are striving to construct a dependable and precise sales prediction model.
 
 ## Dataset
